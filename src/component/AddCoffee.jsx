@@ -21,7 +21,7 @@ const AddCoffee = () => {
         
         console.log(data)
 
-        fetch('http://localhost:5000/user', {
+        fetch('https://coffee-crud-server-five.vercel.app/user', {
             method: 'POST', // HTTP method
             headers: {
               'Content-Type': 'application/json', // Inform server about data format

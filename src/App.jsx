@@ -24,7 +24,7 @@ function App() {
     }).then((result) => {
       if (result.isConfirmed) {
         // Proceed with the deletion
-        fetch(`http://localhost:5000/user/${id}`, {
+        fetch(`https://coffee-crud-server-five.vercel.app/user/${id}`, {
           method: "DELETE",
         })
           .then((response) => response.json())

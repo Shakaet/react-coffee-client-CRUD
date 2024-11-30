@@ -21,7 +21,7 @@ const UpdateCoffee = () => {
 
         console.log(data)
 
-        fetch(`http://localhost:5000/user/${sigleCoffee._id}`, {
+        fetch(`https://coffee-crud-server-five.vercel.app/user/${sigleCoffee._id}`, {
             method: "PUT", // or PATCH for partial updates
             headers: {
               "Content-Type": "application/json",

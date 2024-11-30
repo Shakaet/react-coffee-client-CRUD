@@ -22,7 +22,7 @@ const User = () => {
           .then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/users/${id}`, {
+                fetch(`https://coffee-crud-server-five.vercel.app/users/${id}`, {
                     method: 'DELETE', // HTTP method
                     headers: {
                       'Content-Type': 'application/json',

@@ -34,7 +34,7 @@ const Register = () => {
 
     // create data in mongodb
 
-    fetch('http://localhost:5000/users', {
+    fetch('https://coffee-crud-server-five.vercel.app/users', {
         method: 'POST', // HTTP method
         headers: {
           'Content-Type': 'application/json', // Sending JSON data

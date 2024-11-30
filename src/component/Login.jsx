@@ -23,6 +23,7 @@ const Login = () => {
         .then((result) => {
             // alert("login Successful")
             console.log(result.user)
+            navigate(redirectPath);
             
 
 
@@ -33,7 +34,7 @@ const Login = () => {
                 email,lastSignInTime
             }
 
-            fetch(`http://localhost:5000/users/${email}`, {
+            fetch(`https://coffee-crud-server-five.vercel.app/${email}`, {
                 method: "PATCH", // or PATCH for partial updates
                 headers: {
                   "Content-Type": "application/json",
@@ -51,7 +52,7 @@ const Login = () => {
                         icon: 'success',
                         confirmButtonText: 'OK',
                       });
-                      navigate(redirectPath)
+                    //   navigate(redirectPath);
                       // Reset form fields
                   }
                 })
